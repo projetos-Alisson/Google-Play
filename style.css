@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    
     font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 20px;
+    overflow-x: hidden; /*remover scrool horizontal*/
 }
 
 .container{
@@ -12,6 +16,9 @@
     align-items: center;
     min-height: 64px;
     background-color: #0c0c0c;
+    z-index: 1;
+    position: relative;
+
 
 }
 
@@ -43,6 +50,7 @@ header{
     margin-left: 75px;
     position: absolute;
     top: 60px;
+    z-index: 3;
 
 }
 
@@ -54,8 +62,14 @@ header{
 }
 
 .text p{
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 50px;
+    margin-top: 50px;
+    max-width: 650px;
+}
+
+p #txt-green{
+    color: #28feaf
 }
 
 .btn-download{
@@ -77,9 +91,13 @@ header{
     
 }
 
-.game1{
+ .game1{
     position: absolute;
-    right: 50px;
+    right: -590px;
+    top: -380px;
+    text-overflow: clip;
+    
+    
 }
 
 
